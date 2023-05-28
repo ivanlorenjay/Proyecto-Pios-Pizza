@@ -1,0 +1,91 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para la barra de navegación superior */
+  .top-bar {
+    background-color: #d75d20;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  .nav-link {
+    margin-left: 300px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Estilos para el menú de navegación */
+  header {
+    background-color: #fc9251;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .menu-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+  }
+  
+  /* Estilos para la sección "About Us" */
+  #about-us {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-content img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .description p {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
