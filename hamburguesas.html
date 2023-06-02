@@ -8,18 +8,43 @@
     <link rel="stylesheet" href="estilos/styles.css">
 </head>
 <body>
-    <div class="top-bar">
-        <div class="logo">
-            <img src="imagenes/photo_2023-03-12_21-04-23.jpg" alt="Logo">
-            <h1>Pio's Pizza</h1>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+
+            <!-- menu desplegable -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <!-- logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.jpg" alt="logo-page" width="50" height="50" class="d-inline-block align-text-top rounded-circle">
+                </a>
+
+                <!-- paginas -->
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item name">
+                        <a class="nav-link" href="index.html">Pio's Pizza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                
+            </div>
         </div>
-        <nav>
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="contacto.html">Contacto</a>
-            <a class="nav-link" href="galeria.html">Galería</a>
-            <a class="nav-link" href="about.html">About Us</a>
-        </nav>
-    </div>
+    </nav>
 
     <header>
         <nav>
