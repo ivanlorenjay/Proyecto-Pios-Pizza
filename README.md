@@ -1,6 +1,6 @@
 # Proyecto-Pios-Pizza
 
-Para montar en el 'main'
+## Para montar en el 'main'
     1. pull
     2. add 
     3. commit 
