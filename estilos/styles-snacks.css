@@ -1,4 +1,119 @@
-* {
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para la barra de navegación superior */
+  .top-bar {
+    background-color: #ff7226;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  .nav-link {
+    margin-left: 300px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Estilos para el menú de navegación */
+  header {
+    background-color: #ed9c22;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .menu-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+  }
+
+  /* Estilos para la sección "Snacks" */
+#snacks {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+  }
+  
+  #snacks h2 {
+    margin-bottom: 20px;
+  }
+  
+  .product {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .product img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .product .details {
+    flex-grow: 1;
+  }
+  
+  .product .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .product .description {
+    color: #888;
+    margin-bottom: 5px;
+  }
+  
+  .product .price {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .product .button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .product .button:hover {
+    background-color: #555;
+  }
+  
