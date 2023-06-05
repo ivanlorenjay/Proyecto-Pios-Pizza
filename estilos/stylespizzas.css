@@ -73,10 +73,15 @@ header {
 
 /* Estilos para la sección "Pizzas" */
 
-#pizzas h2 {
+.seccion-pizzas h2 {
+  display: grid;
+  place-items: center;
   margin-bottom: 2rem;
+  font-size: 3.5rem;
   font-weight: bold;
   font-family: 'Dancing Script', cursive;
+  align-items: center;
+  justify-content: center;
 }
 
 .seccion-pizzas{
@@ -84,6 +89,10 @@ header {
   padding: 20px;
 }
 
+.seccion-pizzas .row .card {
+  padding: 10px;
+  margin: 5px 10px;
+}
 
 
 
