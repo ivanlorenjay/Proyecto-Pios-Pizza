@@ -12,6 +12,9 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: scroll;
+    position: relative; 
+    padding-bottom: 3em;
+    min-height: 100vh;
 }
 
 /* Barra de Navegación */
@@ -163,10 +166,11 @@ header .menu p:hover {
 /* Footer */
 
 footer {
-    background-color: #333;
-    color: #fff0f0;
+    /* background-color: #333; */
+    color: #333;
     bottom: 0;
     width: 100%;
+    position: absolute;
 }
 
 footer .row div p {

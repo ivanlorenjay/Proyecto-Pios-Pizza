@@ -3,10 +3,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url(/imagenes/pizza-bg.jpg);
+  /* background-image: url(/imagenes/pizza-bg.jpg); */
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: scroll;
+  position: relative; 
+  padding-bottom: 3em;
+  min-height: 100vh;
 }
 
 /* Barra de Navegación */
@@ -35,8 +38,8 @@ nav .name a {
 
 /* Sociales */
 #whatsapp {
-  position: fixed;
-  bottom: 20px;
+  position:fixed;
+  bottom: 37px;
   right:20px;
 }
 
@@ -50,4 +53,12 @@ circle {
 }
 path {
   fill: #fff;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 2rem;
+  font-size: medium;
 }
