@@ -36,7 +36,46 @@ nav .name a {
   font-size: 1.5rem;
 }
 
-/* Sociales */
+/* Container */
+.container {
+  padding: 40px;
+  margin: 10px;
+}
+
+.container .row .list-unstyled i {
+  color: black;
+  padding: 1em;
+  margin: 2px;
+  font-size: 2em;
+  vertical-align: middle;
+}
+
+.container .row .list-unstyled a {
+  text-decoration: none;
+  color: black;
+  line-height: 2;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+} 
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} 
+
+
+
+
+/* Boton WhatsApp */
 #whatsapp {
   position:fixed;
   bottom: 37px;
