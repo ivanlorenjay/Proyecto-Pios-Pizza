@@ -1,5 +1,7 @@
 /* Estilos generales */
 body {
+  margin: 0;
+  padding: 0;
   background-color: #f2f2f2;
   font-family: sans-serif;
   font-size: 16px;
@@ -61,9 +63,9 @@ header {
   transform: scaleX(1);
 }
 
-/* Estilos para la sección "Pizzas" */
+/* Estilos para el encabezado Pizzas */
 
-.seccion-pizzas h2 {
+.container h2 {
   display: grid;
   place-items: center;
   margin-bottom: 2rem;
@@ -74,22 +76,24 @@ header {
   justify-content: center;
 }
 
-.seccion-pizzas{
-  background-color: salmon;
-  padding: 20px;
+/* Estilos menu de pizzas */
+
+.pizzas-c {
+  background-color: red;
+  margin: 0px;
 }
 
-.seccion-pizzas .row .card {
+.pizzas-c .card {
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
   padding: 10px;
-  margin: 5px 10px;
 }
-
-
-
 
 /* Estilos para el pie de página */
 footer {
   background-color: #f8f8f8;
-  padding: 10px 0;
+  padding: 5px 0;
   text-align: center;
 }
+
