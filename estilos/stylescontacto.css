@@ -36,7 +36,7 @@ nav .name a {
   font-size: 1.5rem;
 }
 
-/* Container */
+/* Container contacto */
 .container {
   padding: 40px;
   margin: 10px;
@@ -50,12 +50,29 @@ nav .name a {
   vertical-align: middle;
 }
 
+.container .row .mensaje i {
+  color:#FB4D3D;
+  font-weight: bold;
+  padding: 1em;
+  margin: 2px;
+  font-size: 5em;
+  padding-top: 10px;
+}
+
+.container .row .mensaje p {
+  color: #D00000;
+  font-size: 2em;
+  padding-top: 1em ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .container .row .list-unstyled a {
   text-decoration: none;
   color: black;
   line-height: 2;
 }
 
+/* Mapa */
 .iframe-container {
   position: relative;
   overflow: hidden;
@@ -71,9 +88,6 @@ nav .name a {
   width: 100%;
   height: 100%;
 } 
-
-
-
 
 /* Boton WhatsApp */
 #whatsapp {
