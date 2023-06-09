@@ -69,17 +69,18 @@ header {
   display: grid;
   place-items: center;
   margin-bottom: 2rem;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-weight: bold;
   font-family: 'Dancing Script', cursive;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
 }
 
 /* Estilos menu de pizzas */
 
 .pizzas-c {
-  background-color: red;
+  background-color: #F3FCF0;
   margin: 0px;
 }
 
