@@ -91,6 +91,13 @@ header {
   padding: 10px;
 }
 
+/* Imágenes */
+
+.container-fluid .pizzas-c .car {
+  height: 200px;
+  width: 300px;
+}
+
 /* Estilos para el pie de página */
 footer {
   background-color: #f8f8f8;
