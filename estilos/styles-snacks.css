@@ -118,3 +118,19 @@ header .menu-item a::before {
   font-size: 1rem;
   color: #555555;
 }
+
+/* Footer */
+
+footer {
+  /* background-color: #333; */
+  color: #333;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+
+footer .row div p {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
