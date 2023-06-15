@@ -1,88 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="estilos/stylesaboutus.css">
+    <link rel="stylesheet" href="estilos/stylesaboutus.css" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/imagenes/icono.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/imagenes/icono.jpg" type="image/x-icon" />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Titan+One&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Barra de navegacion -->
     <nav class="navbar navbar-expand-md navbar-light">
-        <div class="container-fluid">
+      <div class="container-fluid">
+        <!-- menu desplegable -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- menu desplegable -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <!-- logo -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="img/logo.jpg"
+              alt="logo-page"
+              width="50"
+              height="50"
+              class="d-inline-block align-text-top rounded-circle"
+            />
+          </a>
 
-            <div class="collapse navbar-collapse" id="navbar-toggler">
-                <!-- logo -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.jpg" alt="logo-page" width="50" height="50" class="d-inline-block align-text-top rounded-circle">
-                </a>
-
-                <!-- paginas -->
-                <ul class="navbar-nav d-flex justify-content-center align-items-center">
-                    <li class="nav-item name">
-                        <a class="nav-link" href="index.html">Pio's Pizza</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                
-            </div>
+          <!-- paginas -->
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item name">
+              <a class="nav-link" href="index.html">Pio's Pizza</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <header>
-        <nav>
-            <div class="menu-item"><a href="hamburguesas.html">Hamburguesas</a></div>
-            <div class="menu-item"><a href="pizzas.html">Pizzas</a></div>
-            <div class="menu-item"><a href="snacks.html">Snacks</a></div>
-            <div class="menu-item"><a href="bebidas.html">Bebidas</a></div>
-        </nav>
+      <div class="menu-item">
+        <a href="hamburguesas.html">Hamburguesas</a>
+      </div>
+      <div class="menu-item"><a href="pizzas.html">Pizzas</a></div>
+      <div class="menu-item"><a href="snacks.html">Snacks</a></div>
+      <div class="menu-item"><a href="bebidas.html">Bebidas</a></div>
     </header>
 
     <section id="about-us">
-        <div class="container">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <img src="imagenes/about-us.jpg" alt="About Us">
-                <div class="description">
-                    <p>Somos un pequeño restaurante amateur que se dedica a vender comida rapida con nuestro menu te deleitaremos con un sabor unico</p>
-                    <p>Trabajamos en las condiciones mas higienicas que en ninguna cadena de comida rapida grande podria establecer, con unos excelentes precios al alcance de tu bolsillo</p>
-                    <p>Armamos paquetes para tus eventos (cumpleaños, convivios y reuniones)  </p>
-                    <p>Visitanos en :</p>
-                    <p>5 de mayo #10<br></p>
-                </div>
-            </div>
+      <div class="about-content">
+        <div class="description">
+          <p>
+            En Pio’s Pizza, nos enorgullece ofrecerte las pizzas, hamburguesas,
+            bebidas y snacks más deliciosos y auténticos que puedas encontrar en
+            el pueblo mágico. Nuestro compromiso es brindarte una experiencia
+            culinaria única, donde cada bocado sea una explosión de sabor y
+            calidad. Nuestros productos son preparados con los ingredientes más
+            frescos y seleccionados cuidadosamente. Desde nuestra masa fina y
+            crujiente hasta nuestras salsas caseras y una variedad de
+            coberturas, cada producto es una obra maestra artesanal. Nuestros
+            talentosos chefs ponen su pasión y dedicación en cada creación,
+            asegurándose de que cada pedido sea una experiencia inigualable. En
+            Pio’s Pizza, sabemos que todos tienen gustos diferentes, por eso
+            ofrecemos una amplia selección de productos. Ya sea que prefieras
+            una hamburguesa clásica, una exquisita con tocino o una atrevida
+            Hawaiana, tenemos algo para todos, asegurándonos de satisfacer los
+            gustos y necesidades de todos nuestros clientes.Además de nuestras
+            pizzas, también ofrecemos una variedad de postres tentadores para
+            completar tu experiencia culinaria. Nuestro objetivo es hacer que
+            cada visita a Pio’s Pizza sea memorable y te deje con ganas de
+            volver por más. Ya sea que quieras disfrutar de una comida con
+            amigos y familiares en nuestro acogedor restaurante o prefieras
+            llevar nuestras delicias a casa, nuestro amable equipo estará
+            encantado de atenderte. También ofrecemos servicios de entrega
+            rápida y eficiente para que puedas disfrutar de nuestras pizzas sin
+            salir de casa. En Pio´s Pizza, nos apasiona brindarte un servicio
+            excepcional y una calidad inigualable. Te invitamos a probar
+            nuestras pizzas, hamburguesas, bebidas y descubrir por qué somos la
+            pizzería de referencia en la ciudad. De igual manera podemos
+            organizar paquetes para sus eventos (cumpleaños, convivios y
+            reuniones) ¡Ven a Pio´s Pizza y déjanos deleitarte con nuestras
+            creaciones culinarias únicas!
+          </p>
+          <div>
+            <img src="/imagenes/papas a la francesa icono.png" alt="" />
+            <img src="/imagenes/rebanada-pizza-icono.avif" alt="" />
+            <img src="/imagenes/waffle icono.png" alt="" />
+          </div>
         </div>
+      </div>
     </section>
-
     <footer>
-
+      <p>Visitanos en: San Pablo Villa de Mitla, Oaxaca de Juarez</p>
     </footer>
-
-    </body>
+  </body>
 </html>
