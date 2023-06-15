@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Barra de Navegación */
+  .navbar {
+    padding: 2rem;
+    background-color: #f5f6f7;
+    position: fixed;
+  }
+  
+  .navbar-collapse .nav-bar {
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    /* margin-left: 130px */
+  }
+  
+  nav .name a {
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .menu-item {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  header .menu-item a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  header .menu-item a::before {
+    content: "";
+    top: 100%;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  header .menu-item a:hover {
+    color: #FDE74C;
+  }
+  
+  header .menu-item a::before {
+    transform: scaleX(1);
+  }
+  
+  .container h2 {
+    display: grid;
+    place-items: center;
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    margin-top: auto;
+  }
+
+  /* Estilos para la sección "Hamburguesas" */
+#hamburguesas {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+  }
+  
+  #hamburguesas h2 {
+    margin-bottom: 20px;
+  }
+  
+  .product {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .product .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .product .description {
+    color: #888;
+    margin-bottom: 5px;
+  }
+  
+  .product .price {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .product .button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .product .button:hover {
+    background-color: #555;
+  }
+  
