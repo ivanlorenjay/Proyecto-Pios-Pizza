@@ -7,6 +7,10 @@ body {
   font-size: 16px;
 }
 
+header h1 {
+  color: white;
+}
+
 /* Barra de Navegación */
 .navbar {
   padding: 2rem;
@@ -16,7 +20,7 @@ body {
 
 .navbar-collapse .nav-bar {
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .nav-link {
@@ -29,6 +33,11 @@ nav .name a {
   color: black;
   text-decoration: none;
   font-size: 1.5rem;
+}
+
+nav .nav-item i {
+  color: black;
+  font-size: 2rem;
 }
 
 /* Estilos para el menú de navegación */
@@ -85,7 +94,7 @@ header {
 }
 
 .pizzas-c .card {
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   margin: 20px;
   padding: 10px;
@@ -104,4 +113,183 @@ footer {
   padding: 5px 0;
   text-align: center;
 }
+
+/* icono y contador circle */
+
+.icon-cart{
+  width: 40px;
+  height: 40px;
+  stroke: #131212;
+}
+
+.icon-cart:hover{
+  cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container-icon{
+  position: absolute;
+}
+
+.count-products{
+  position: absolute;
+  top: 55%;
+  right: 0;
+
+  background-color: #000;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#contador-productos{
+  font-size: 12px;
+}
+
+.container-cart-products{
+  position: absolute;
+  top: 50px;
+  left: 0;
+
+  background-color: #fff;
+  width: 400px;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+  border-radius: 10px;
+}
+
+.cart-product{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.info-cart-product{
+  display: flex;
+  justify-content: space-between;
+  flex: 0.8;
+}
+
+.titulo-producto-carrito{
+  font-size: 20px;
+}
+
+.precio-producto-carrito{
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.icon-close{
+  width: 25px;
+  height: 25px;
+}
+
+.icon-close:hover{
+  stroke: red;
+  cursor: pointer;
+}
+
+.cart-total{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.cart-total h3{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.total-pagar{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.hidden-cart{
+  display: none;
+}
+
+/* Main */
+
+/* .container-items .col .card img{
+  height: 200px;
+  width: 200px;
+} */
+
+/* .item{
+  border-radius: 10px;
+} */
+
+/* .item:hover{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+} */
+
+.item img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all .5s;
+}
+
+/* .item figure{
+  overflow: hidden;
+} */
+
+/* .item:hover img{
+  transform: scale(1.2);
+} */
+
+/* Letras de la pizza */
+.info-product{
+  padding: 5px 10px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price{
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.info-product button{
+  border: none;
+  background: none;
+  background-color: #ffffff;
+  color: #181717;
+  padding: 15px 10px;
+  /* width: 300px; */
+  cursor: pointer;
+}
+
+.cart-empty{
+  padding: 20px;
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
 

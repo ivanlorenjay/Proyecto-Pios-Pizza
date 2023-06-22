@@ -33,34 +33,24 @@
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-fluid">
         <!-- menu desplegable -->
-        <button
-          class="navbar-toggler"
+        <button class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbar-toggler"
           aria-controls="navbarTogglerDemo01"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbar-toggler">
           <!-- logo -->
           <a class="navbar-brand" href="index.html">
-            <img
-              src="img/logo.jpg"
-              alt="logo-page"
-              width="50"
-              height="50"
-              class="d-inline-block align-text-top rounded-circle"
-            />
+            <img src="img/logo.jpg" alt="logo-page" width="50" height="50" class="d-inline-block align-text-top rounded-circle"/>
           </a>
 
           <!-- paginas -->
-          <ul
-            class="navbar-nav d-flex justify-content-center align-items-center"
-          >
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item name">
               <a class="nav-link" href="index.html">Pio's Pizza</a>
             </li>
@@ -76,15 +66,16 @@
             <li class="nav-item">
               <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
+            <li class="nav-item">
+              <i class="bi bi-cart"></i>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <header class="container-fluid">
-      <div
-        class="flex-row d-flex justify-content-between align-items-center head-items"
-      >
+      <div class="flex-row d-flex justify-content-between align-items-center head-items">
         <div class="menu-item">
           <a href="hamburguesas.html">Hamburguesas</a>
         </div>
@@ -94,15 +85,116 @@
       </div>
     </header>
 
+    <div class="container-icon">
+      <div class="container-cart-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon-cart"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+          />
+        </svg>
+        <div class="count-products">
+          <span id="contador-productos">0</span>
+        </div>
+      </div>
+
+      <div class="container-cart-products hidden-cart">
+        <div class="row-product hidden">
+          <div class="cart-product">
+            <div class="info-cart-product">
+              <span class="cantidad-producto-carrito">1</span>
+              <p class="titulo-producto-carrito">Chica</p>
+              <span class="precio-producto-carrito">$80</span>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon-close"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+        </div>
+        
+        <!-- lista pedido -->
+        <div class="cart-total hidden">
+          <h3>Total:</h3>
+          <span class="total-pagar">$200</span>
+        </div>
+        <p class="cart-empty">El pedido está vacío</p>
+      </div>
+    </div>
+  </header>
+
     <!-- titulo de la pagina -->
     <div class="container titulo">
       <h2>Pizzas</h2>
     </div>
 
     <!-- Contenedor de las pizzas -->
-    <section class="container-fluid flex-gow-1">
-      <!-- primeras 2 pizzas -->
-      <div class="row justify-content-center align-items-center pizzas-c">
+    <div class="row container-fluid row-cols-1 row-cols-md-2 g-4 container-items">
+
+      <div class="card" style="width: 18rem;">
+        <img src="/imagenes/pizza peperoni icono.jpg" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="info-product">
+          <h2>Chica</h2>
+          <p class="price">$80</p>
+          <button type="button" class="btn btn-primary btn-add-cart">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/img/oaxaquena.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+          <div class="info-product">
+            <h2>Chica</h2>
+            <p class="price">$80</p>
+            <!-- <button class="btn-add-cart">Añadir al carrito</button> -->
+            <button type="button" class="btn btn-primary btn-add-cart">Añadir al carrito</button>
+            <!-- <button type="button" class="btn btn-dark btn-add-cart">Dark</button> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="container-items container-fluid">
+      
+      <div class="row justify-content-center align-items-center ">
         <div class="card mb-3" style="max-width: 540px">
           <div class="row g-0">
             <div class="col-md-4">
@@ -112,258 +204,23 @@
                 alt="pizza-peperoni"
               />
             </div>
+
             <div class="col-md-8">
-              <div class="card-body">
+              <div class="card-body item">
                 <h5 class="card-title">Pizza de Peperoni</h5>
-                <p class="card-text">
-                  Nuestra pizza de pepperoni es la combinación perfecta de
-                  sabrosas carnes y queso, todo horneado a la perfección.
-                </p>
+                <div class="info-product">
+                  <h2>Chica</h2>
+                  <p class="price">$80</p>
+                  <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
               </div>
-              <select name="Size" id="Size">
-                <option value="Chica">Chica</option>
-                <option value="Mediana">Mediana</option>
-                <option value="Grande">Grande</option>
-                <option value="Familiar">Familiar</select>
-              </select>
             </div>
+
           </div>
         </div>
 
-        <div class="card mb-3" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="/img/hawaiana.jpg"
-                class="img-fluid rounded-start"
-                alt="pizza-hawaiana"
-              />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Pizza Hawaiana</h5>
-                <p class="card-text">
-                  Nuestra pizza hawaiana es una triple amenaza de sabores
-                  afrutados, jugosos y dulces, con un equilibrio.
-                </p>
-              </div>
-              <select name="Size" id="Size">
-                <option value="Chica">Chica</option>
-                <option value="Mediana">Mediana</option>
-                <option value="Grande">Grande</option>
-                <option value="Familiar">Familiar</option>
-              </select>
-            </div>
-          </div>
-        </div>
       </div>
-
-      <!-- 2 pizzas más -->
-      <div class="row justify-content-center align-items-center pizzas-c">
-        <div class="card mb-3" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="img/americana-1.png"
-                class="img-fluid rounded-start"
-                alt="pizza-americana"
-              />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Pizza Americana</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
-                </p>
-              </div>
-              <select name="Size" id="Size">
-                <option value="Chica">Chica</option>
-                <option value="Mediana">Mediana</option>
-                <option value="Grande">Grande</option>
-                <option value="Familiar">Familiar</option>
-              </select>
-            </div>
-          </div>
-        </div>
-
-        <div class="card mb-3" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="/img/oaxaquena.jpg"
-                class="img-fluid rounded-start"
-                alt="pizza-oaxaqueña"
-              />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Pizza Oaxaqueña</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
-                </p>
-              </div>
-              <select name="Size" id="Size">
-                <option value="Chica">Chica</option>
-                <option value="Mediana">Mediana</option>
-                <option value="Grande">Grande</option>
-                <option value="Familiar">Familiar</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2 MÁS -->
-      <div class="row justify-content-center align-items-center pizzas-c">
-        <div class="card mb-3" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="/img/carnes-frias-1.png"
-                class="img-fluid rounded-start"
-                alt="Pizza-carnes-frias"
-              />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Pizza de carnes frías</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
-                </p>
-              </div>
-              <select name="Size" id="Size">
-                <option value="Chica">Chica</option>
-                <option value="Mediana">Mediana</option>
-                <option value="Grande">Grande</option>
-                <option value="Familiar">Familiar</option>
-              </select>
-            </div>
-          </div>
-        </div>
-
-        <div class="card mb-3" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="/img/pastor.png"
-                class="img-fluid rounded-start"
-                alt="pizza-al-pastor"
-              />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Pizza al pastor</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
-                </p>
-              </div>
-              <select name="Size" id="Size">
-                <option value="Chica">Chica</option>
-                <option value="Mediana">Mediana</option>
-                <option value="Grande">Grande</option>
-                <option value="Familiar">Familiar</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2 últimas -->
-      <div class="row justify-content-center align-items-center pizzas-c">
-        <div class="card mb-3" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="/img/vegetariana.png"
-                class="img-fluid rounded-start"
-                alt="pizza-vegetariana"
-              />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Pizza Vegetariana</h5>
-                <p class="card-text">
-                  Satisface tus antojos con nuestra deliciosa pizza vegetariana,
-                  cargada de verduras frescas y sabroso queso.
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
-                </p>
-              </div>
-              <select name="Size" id="Size">
-                <option value="Chica">Chica</option>
-                <option value="Mediana">Mediana</option>
-                <option value="Grande">Grande</option>
-                <option value="Familiar">Familiar</option>
-              </select>
-            </div>
-          </div>
-        </div>
-
-        <div class="card mb-3" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="/img/alambre.png"
-                class="img-fluid rounded-start"
-                alt="pizza-alambre"
-              />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Pizza de Alambre</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
-                </p>
-              </div>
-              <select name="Size" id="Size">
-                <option value="Chica">Chica</option>
-                <option value="Mediana">Mediana</option>
-                <option value="Grande">Grande</option>
-                <option value="Familiar">Familiar</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
     <footer class="container-fluid bg-light text-center p-3">
       <p class="small">
@@ -374,5 +231,6 @@
       src="https://kit.fontawesome.com/5fc6fc59a6.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/JavaScript/ticket.js"></script>
   </body>
 </html>
