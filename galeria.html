@@ -64,26 +64,77 @@
         </nav>
     </header>
 
-    <section id="galeria">
-        <div class="container">
-            <h2>Galería</h2>
-            <div class="gallery">
-                <img src="imagenes/capuchino-PhotoRoom.png-PhotoRoom.png" alt="Producto 1">
-                <img src="imagenes/crepa-PhotoRoom.png-PhotoRoom.png" alt="Producto 2">
-                <img src="imagenes/frape vainilla-PhotoRoom.png-PhotoRoom.png" alt="Producto 3">
-                <img src="imagenes/frape-PhotoRoom.png-PhotoRoom.png" alt="Producto 4">
-                <img src="imagenes/hamburguesa-PhotoRoom.png-PhotoRoom.png" alt="Producto 5">
-                <img src="imagenes/hamburguesas-PhotoRoom.png-PhotoRoom.png" alt="Producto 6">
-                <img src="imagenes/pizza alambre-PhotoRoom.png-PhotoRoom.png" alt="Producto 7">
-                <img src="imagenes/pizza galeria-PhotoRoom.png-PhotoRoom.png" alt="Producto 8">
-                <img src="imagenes/pizza hawallana galeria-PhotoRoom.png-PhotoRoom.png" alt="Producto 9">
-                <img src="imagenes/pizza peperoni con campiniones-PhotoRoom.png-PhotoRoom.png" alt="Producto 10">
-                <img src="imagenes/pizza peperoni galeria-PhotoRoom.png-PhotoRoom.png" alt="Producto 11">
-                <!-- Agrega más imágenes aquí -->
+    <section class="container-fluid galeria">
+        <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <img class="testimonio-imagen rounded-circle" src="img/alambre.png" alt="Foto de Gino">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="testimonio-imagen rounded-circle" src="img/carnes-frias-1.png" alt="Foto de Nora">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="testimonio-imagen rounded-circle" src="img/oaxaquena.jpg" alt="Foto de Leonardo">
+                        <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+                        <div class="testimonio-info">
+                            <p class="cliente">Leonardo</p>
+                            <p class="cargo">Director de AprendeAProgramar</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
-    </section>
 
+        <div class="container-fluid fotos">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="/img/alambre.png" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-4">
+                <img src="img/peperoni-1.png" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-4">
+                <img src="img/pastor.png" class="img-fluid" alt="...">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="image4.jpg" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-4">
+                <img src="image5.jpg" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-4">
+                <img src="image6.jpg" class="img-fluid" alt="...">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="image7.jpg" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-4">
+                <img src="image8.jpg" class="img-fluid" alt="...">
+              </div>
+              <div class="col-md-4">
+                <img src="image9.jpg" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+    </section>
+    
     <footer>
     
     </footer>
