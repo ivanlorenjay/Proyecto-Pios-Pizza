@@ -72,7 +72,7 @@ header .menu-item a::before {
   transform: scaleX(1);
 }
 
-.container h2 {
+.container h2{
   display: grid;
   place-items: center;
   margin-bottom: 2rem;
@@ -89,7 +89,8 @@ header .menu-item a::before {
 #Hamburguesas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .product {
@@ -123,4 +124,13 @@ header .menu-item a::before {
 .product p {
   margin-top: 10px;
   color: #777;
+}
+
+/* Separación entre los productos */
+.product:nth-child(2n) {
+  margin-right: 35%;
+}
+
+.product:nth-child(2n+1) {
+  margin-left: 35%;
 }
