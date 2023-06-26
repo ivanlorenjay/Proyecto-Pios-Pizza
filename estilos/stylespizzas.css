@@ -283,7 +283,7 @@ img {
   background-color: #ffffff;
   color: #181717;
   padding: 15px 10px;
-  /* width: 300px; */
+  width: 300px;
   cursor: pointer;
 }
 
@@ -308,6 +308,11 @@ img {
   height: auto;
 } 
 
+.Pizza > div > article {
+  margin: 20px;
+  padding: 10px;
+}
+
 .Pizza p {
   margin: 0;
 }
@@ -316,7 +321,7 @@ img {
   margin-top: 1rem;
 }
 
-.Pizza > div > span:first-child {
+.Pizza > div > div > span:first-child {
   font-size: 1.25rem;
   font-weight: 500;
 }
@@ -353,6 +358,7 @@ img {
   border: none;
   background-color: #333;
   color: white;
+  border-radius: 25px;
 }
 
 #Pedidos {
@@ -371,7 +377,7 @@ img {
 }
 
 .container-cart-icon:hover + #Pedidos {
-  transition: 1s ease-out;
+  transition: 0.5s ease-out;
   clip-path: circle(200% at 0% 0%);
 }
 
@@ -435,12 +441,18 @@ img {
 
 
 /* Footer */
-footer {
+/* footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-}
+} */
 footer p {
   margin: 0;
 }
+
+.footer-row {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
