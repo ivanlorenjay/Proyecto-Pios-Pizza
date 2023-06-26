@@ -8,7 +8,7 @@ const Sizes = [
 ];
 
 const P = document.querySelector("#Pedidos"),
-  Productos = document.querySelectorAll("#MainPizza>article"),
+  Productos = document.querySelectorAll("#MainPizza>div>div>article"),
   Carrito = [];
 
 Productos.forEach((Pro) => {

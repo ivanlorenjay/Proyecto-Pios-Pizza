@@ -283,7 +283,7 @@ img {
   background-color: #ffffff;
   color: #181717;
   padding: 15px 10px;
-  /* width: 300px; */
+  width: 300px;
   cursor: pointer;
 }
 
@@ -296,35 +296,47 @@ img {
   display: none;
 }
 
+/* c  */
 .Pizza {
   width: 30rem;
   display: grid;
   grid-template: max-content / 2fr 3fr;
   gap: 0.75rem;
 }
+
 .Pizza > img {
   height: auto;
+} 
+
+.Pizza > div > article {
+  margin: 20px;
+  padding: 10px;
 }
+
 .Pizza p {
   margin: 0;
 }
-.Pizza > div > div:last-child {
+
+.Pizza > div > div > div:last-child {
   margin-top: 1rem;
 }
 
-.Pizza > div > span:first-child {
+.Pizza > div > div > span:first-child {
   font-size: 1.25rem;
   font-weight: 500;
 }
 
-.Pizza > div > p {
+.Pizza > div > div > p {
   font-size: 1rem;
 }
+
+/* span */
 
 .Pizza span {
   font-size: 1.1em;
   font-weight: 600;
 }
+
 .Pizza [data-Price] {
   display: block;
   font-size: 1.1rem;
@@ -336,6 +348,7 @@ img {
   color: green;
   font-weight: 600;
 }
+
 .Pizza button {
   display: block;
   width: 100%;
@@ -345,7 +358,9 @@ img {
   border: none;
   background-color: #333;
   color: white;
+  border-radius: 25px;
 }
+
 #Pedidos {
   position: absolute;
   top: 100%;
@@ -360,10 +375,12 @@ img {
   transition: 1s 0.5s ease-out;
   clip-path: circle(0% at 0% 0%);
 }
+
 .container-cart-icon:hover + #Pedidos {
-  transition: 1s ease-out;
+  transition: 0.5s ease-out;
   clip-path: circle(200% at 0% 0%);
 }
+
 #Pedidos::before {
   content: "Sin productos";
   position: absolute;
@@ -378,9 +395,11 @@ img {
   font-weight: 600;
   font-size: 1.25em;
 }
+
 #Pedidos.Fill::before {
   display: none;
 }
+
 #Pedidos > span {
   position: absolute;
   bottom: 0;
@@ -391,14 +410,17 @@ img {
   border-top: 2px solid skyblue;
   font-weight: 600;
 }
+
 #Pedidos > span::after {
   content: attr(data-Price);
   color: green;
   font-style: italic;
 }
+
 #Pedidos > div {
   padding: 0.5rem;
 }
+
 #Pedidos article {
   display: grid;
   grid-template: 1fr / max-content 1fr;
@@ -407,19 +429,30 @@ img {
   width: 100%;
   font-weight: 600;
 }
+
 #Pedidos article > span {
   font-weight: 600;
 }
+
 #Pedidos article > span:last-child::before {
   content: "$";
   color: green;
 }
-footer {
+
+
+/* Footer */
+/* footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-}
+} */
 footer p {
   margin: 0;
 }
+
+.footer-row {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
