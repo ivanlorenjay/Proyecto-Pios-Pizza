@@ -105,38 +105,10 @@
           <span id="contador-productos">0</span>
         </div>
       </div>
-
-      <div class="container-cart-products hidden-cart">
-        <div class="row-product hidden">
-          <div class="cart-product">
-            <div class="info-cart-product">
-              <span class="cantidad-producto-carrito">1</span>
-              <p class="titulo-producto-carrito">Chica</p>
-              <span class="precio-producto-carrito">$80</span>
-            </div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="icon-close"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </div>
-        </div>
-        
         <!-- lista pedido -->
-        <div class="cart-total hidden">
-          <h3>Total:</h3>
-          <span class="total-pagar">$200</span>
-        </div>
-        <p class="cart-empty">El pedido está vacío</p>
+        <div id="Pedidos">
+          <div></div>
+          <span data-Price="$0">Total: </span>
       </div>
     </div>
   </header>
@@ -147,87 +119,26 @@
     </div>
 
     <!-- Contenedor de las pizzas -->
-    <section class="container container-items">
-
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="/img/peperoni-1.png" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="info-product">
-                <h2>Chica</h2>
-                <p class="price">$80</p>
-                <button type="button" class="btn btn-dark btn-add-cart">Añadir al pedido</button>
-                <!-- <button class="btn-add-cart">Añadir al carrito</button> -->
-              </div>
-            </div>
+    <section class="container container-items" id="MainPizza">
+      <article class="Pizza" id="0">
+        <img src="/img/peperoni-1.png" alt="Pizza 1">
+        <div>
+          <span class="NamePizza">Card title</span>
+          <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div>
+            <span>Tamaño:</span>
+            <select name="SizePizza">
+              <option value="S">Chica</option>
+              <option value="M" selected>Mediana</option>
+              <option value="L">Grande</option>
+              <option value="F">Familiar</option>
+            </select>
+            <span data-Price="0">Costo: $</span>
+            <button>Agregar</button>
           </div>
         </div>
-      </div>
-
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="/img/peperoni-1.png" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="info-product">
-                <h2>Mediana</h2>
-                <p class="price">$100</p>
-                <button type="button" class="btn btn-dark btn-add-cart">Añadir al pedido</button>
-                <!-- <button class="btn-add-cart">Añadir al carrito</button> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      </article>
     </section>
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="container-items container-fluid">
-      
-      <div class="row justify-content-center align-items-center ">
-        <div class="card mb-3" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="/img/peperoni-1.png"
-                class="img-fluid rounded-start"
-                alt="pizza-peperoni"
-              />
-            </div>
-
-            <div class="col-md-8">
-              <div class="card-body item">
-                <h5 class="card-title">Pizza de Peperoni</h5>
-                <div class="info-product">
-                  <h2>Chica</h2>
-                  <p class="price">$80</p>
-                  <button class="btn-add-cart">Añadir al carrito</button>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
     <footer class="container-fluid bg-light text-center p-3">
       <p class="small">
         &copy; Todos los derechos reservados :: Pio's Pizza :: México 2023
