@@ -121,16 +121,15 @@ header .menu-item a::before {
 
 /* Footer */
 
-footer {
-  /* background-color: #333; */
-  color: #333;
-  bottom: 0;
-  width: 100%;
-  position: absolute;
+.footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
 }
 
-footer .row div p {
-  display: flex;
-  justify-content: center;
-  align-items:center;
+.footer .container {
+  max-width: 960px;
+}
+
+.footer span {
+  font-size: 14px;
 }
