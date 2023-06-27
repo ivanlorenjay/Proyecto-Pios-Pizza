@@ -299,6 +299,9 @@ img {
 /* c  */
 .Pizza {
   width: 30rem;
+  margin: 20px;
+  border: 1px solid rgb(7, 4, 12);
+  border-radius: 10px;
   display: grid;
   grid-template: max-content / 2fr 3fr;
   gap: 0.75rem;
@@ -441,12 +444,12 @@ img {
 
 
 /* Footer */
-/* footer {
-  position: fixed;
+footer {
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   width: 100%;
-} */
+}
 footer p {
   margin: 0;
 }
