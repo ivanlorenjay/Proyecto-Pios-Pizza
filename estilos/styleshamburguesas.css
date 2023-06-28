@@ -72,26 +72,25 @@ header .menu-item a::before {
   transform: scaleX(1);
 }
 
-.container h2{
-  /* display: grid; */
+.container h2 {
+  display: flex;
   place-items: center;
   margin-bottom: 2rem;
   font-size: 3.2rem;
   font-weight: bold;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
-  margin-top: auto;
+  padding-top: 10px;
 }
 
 
 #Hamburguesas {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 153, 0);
+  /* background-color: rgb(255, 153, 0); */
 }
 
 .product-container {
