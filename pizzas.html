@@ -1,237 +1,219 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pizzas</title>
-    <link rel="stylesheet" href="estilos/stylespizzas.css" />
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/imagenes/icono.jpg" type="image/x-icon" />
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Barra de navegacion -->
-    <nav class="navbar navbar-expand-md navbar-light">
-      <div class="container-fluid">
-        <!-- menu desplegable -->
-        <button class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar-toggler"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbar-toggler">
-          <!-- logo -->
-          <a class="navbar-brand" href="index.html">
-            <img src="img/logo.jpg" alt="logo-page" width="50" height="50" class="d-inline-block align-text-top rounded-circle"/>
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizzas</title>
+  <link rel="stylesheet" href="estilos/stylespizzas.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/imagenes/icono.jpg" type="image/x-icon" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Titan+One&display=swap"
+    rel="stylesheet" />
+</head>
 
-          <!-- paginas -->
-          <ul class="navbar-nav d-flex justify-content-center align-items-center">
-            <li class="nav-item name">
-              <a class="nav-link" href="index.html">Pio's Pizza</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="galeria.html">Galería</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <i class="bi bi-cart"></i>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<body>
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <!-- menu desplegable -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <header class="container-fluid">
-      <div class="flex-row d-flex justify-content-between align-items-center head-items">
-        <div class="menu-item">
-          <a href="hamburguesas.html">Hamburguesas</a>
-        </div>
-        <div class="menu-item"><a href="pizzas.html">Pizzas</a></div>
-        <div class="menu-item"><a href="snacks.html">Snacks</a></div>
-        <div class="menu-item"><a href="bebidas.html">Bebidas</a></div>
-      </div>
-    </header>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <!-- logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.jpg" alt="logo-page" width="50" height="50"
+            class="d-inline-block align-text-top rounded-circle" />
+        </a>
 
-    <!-- carrito -->
-    <div class="container-icon">
-      <div class="container-cart-icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="icon-cart"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-          />
-        </svg>
-        <div class="count-products">
-          <span id="contador-productos">0</span>
-        </div>
+        <!-- paginas -->
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item name">
+            <a class="nav-link" href="index.html">Pio's Pizza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <i class="bi bi-cart"></i>
+          </li>
+        </ul>
       </div>
-        <!-- lista pedido -->
-        <div id="Pedidos">
-          <div></div>
-          <span data-Price="$0">Total: </span>
+    </div>
+  </nav>
+
+  <header class="container-fluid">
+    <div class="flex-row d-flex justify-content-between align-items-center head-items">
+      <div class="menu-item">
+        <a href="hamburguesas.html">Hamburguesas</a>
       </div>
+      <div class="menu-item"><a href="pizzas.html">Pizzas</a></div>
+      <div class="menu-item"><a href="snacks.html">Snacks</a></div>
+      <div class="menu-item"><a href="bebidas.html">Bebidas</a></div>
     </div>
   </header>
 
-    <!-- titulo de la pagina -->
-    <div class="container titulo">
-      <h2>Pizzas</h2>
+  <!-- carrito -->
+  <div class="container-icon">
+    <div class="container-cart-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="icon-cart">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+      </svg>
+      <div class="count-products">
+        <span id="contador-productos">0</span>
+      </div>
+    </div>
+    <!-- lista pedido -->
+    <div id="Pedidos">
+      <div></div>
+      <span data-Price="$0">Total: </span>
+    </div>
+  </div>
+  </header>
+
+  <!-- titulo de la pagina -->
+  <div class="container titulo">
+    <h2>Pizzas</h2>
+  </div>
+
+  <!-- Contenedor de las pizzas -->
+  <section class="container" id="MainPizza">
+
+    <div class="row">
+
+      <div class="col-md-6 justify-content-center">
+        <article class="Pizza col-12" id="0">
+          <img src="/img/peperoni-1.png" alt="Pizza 1">
+          <div>
+            <span class="NamePizza">Peperoni</span>
+            <p>This is a wider cardas a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div>
+              <span>Tamaño:</span>
+              <select name="SizePizza">
+                <option value="S">Chica</option>
+                <option value="M" selected>Mediana</option>
+                <option value="L">Grande</option>
+                <option value="F">Familiar</option>
+              </select>
+              <span data-Price="0">Costo: $</span>
+              <button>Agregar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-6">
+        <article class="Pizza col-12" id="0">
+          <img src="/img/peperoni-1.png" alt="Pizza 1">
+          <div>
+            <span class="NamePizza">Hawaiana</span>
+            <p>This is a wider card with supporting text below additional content. This content is a little bit longer.
+            </p>
+            <div>
+              <span>Tamaño:</span>
+              <select name="SizePizza">
+                <option value="S">Chica</option>
+                <option value="M" selected>Mediana</option>
+                <option value="L">Grande</option>
+                <option value="F">Familiar</option>
+              </select>
+              <span data-Price="0">Costo: $</span>
+              <button>Agregar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
     </div>
 
-    <!-- Contenedor de las pizzas -->
-    <section class="container" id="MainPizza">
+    <!-- 2 pizzas más -->
 
-      <div class="row">
+    <div class="row">
 
-        <div class="col-md-6 justify-content-center">
-          <article class="Pizza col-12" id="0">
-            <img src="/img/peperoni-1.png" alt="Pizza 1">
+      <div class="col-md-6">
+        <article class="Pizza col-12" id="0">
+          <img src="/img/peperoni-1.png" alt="Pizza 1">
+          <div>
+            <span class="NamePizza">Carnes Frías</span>
+            <p>This is a wider cardas a natural lead-in to additional content. This content is a little bit longer.</p>
             <div>
-              <span class="NamePizza">Peperoni</span>
-              <p>This is a wider cardas a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div>
-                <span>Tamaño:</span>
-                <select name="SizePizza">
-                  <option value="S">Chica</option>
-                  <option value="M" selected>Mediana</option>
-                  <option value="L">Grande</option>
-                  <option value="F">Familiar</option>
-                </select>
-                <span data-Price="0">Costo: $</span>
-                <button>Agregar</button>
-              </div>
+              <span>Tamaño:</span>
+              <select name="SizePizza">
+                <option value="S">Chica</option>
+                <option value="M" selected>Mediana</option>
+                <option value="L">Grande</option>
+                <option value="F">Familiar</option>
+              </select>
+              <span data-Price="0">Costo: $</span>
+              <button>Agregar</button>
             </div>
-          </article>
-        </div>
-
-        <div class="col-md-6">
-          <article class="Pizza col-12" id="0">
-            <img src="/img/peperoni-1.png" alt="Pizza 1">
-            <div>
-              <span class="NamePizza">Hawaiana</span>
-              <p>This is a wider card with supporting text below  additional content. This content is a little bit longer.</p>
-              <div>
-                <span>Tamaño:</span>
-                <select name="SizePizza">
-                  <option value="S">Chica</option>
-                  <option value="M" selected>Mediana</option>
-                  <option value="L">Grande</option>
-                  <option value="F">Familiar</option>
-                </select>
-                <span data-Price="0">Costo: $</span>
-                <button>Agregar</button>
-              </div>
-            </div>
-          </article>
-        </div>
-
+          </div>
+        </article>
       </div>
 
-      <!-- 2 pizzas más -->
-
-      <div class="row">
-
-        <div class="col-md-6">
-          <article class="Pizza col-12" id="0">
-            <img src="/img/peperoni-1.png" alt="Pizza 1">
+      <div class="col-md-6">
+        <article class="Pizza col-12" id="0">
+          <img src="/img/peperoni-1.png" alt="Pizza 1">
+          <div>
+            <span class="NamePizza">Mexicana</span>
+            <p>This is a wider card with supporting text below additional content. This content is a little bit longer.
+            </p>
             <div>
-              <span class="NamePizza">Carnes Frías</span>
-              <p>This is a wider cardas a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div>
-                <span>Tamaño:</span>
-                <select name="SizePizza">
-                  <option value="S">Chica</option>
-                  <option value="M" selected>Mediana</option>
-                  <option value="L">Grande</option>
-                  <option value="F">Familiar</option>
-                </select>
-                <span data-Price="0">Costo: $</span>
-                <button>Agregar</button>
-              </div>
+              <span>Tamaño:</span>
+              <select name="SizePizza">
+                <option value="S">Chica</option>
+                <option value="M" selected>Mediana</option>
+                <option value="L">Grande</option>
+                <option value="F">Familiar</option>
+              </select>
+              <span data-Price="0">Costo: $</span>
+              <button>Agregar</button>
             </div>
-          </article>
-        </div>
-
-        <div class="col-md-6">
-          <article class="Pizza col-12" id="0">
-            <img src="/img/peperoni-1.png" alt="Pizza 1">
-            <div>
-              <span class="NamePizza">Mexicana</span>
-              <p>This is a wider card with supporting text below  additional content. This content is a little bit longer.</p>
-              <div>
-                <span>Tamaño:</span>
-                <select name="SizePizza">
-                  <option value="S">Chica</option>
-                  <option value="M" selected>Mediana</option>
-                  <option value="L">Grande</option>
-                  <option value="F">Familiar</option>
-                </select>
-                <span data-Price="0">Costo: $</span>
-                <button>Agregar</button>
-              </div>
-            </div>
-          </article>
-        </div>
+          </div>
+        </article>
       </div>
+    </div>
 
-      
 
 
-    </section>
 
-    <footer class="container-fluid bg-light text-center p-3">
-      <p class="small">
-        &copy; Todos los derechos reservados :: Pio's Pizza :: México 2023
-      </p>
-    </footer>
-    
-    <script
-      src="https://kit.fontawesome.com/5fc6fc59a6.js"
-      crossorigin="anonymous"
-    ></script>
-    
-    <script src="/JavaScript/ticket.js"></script>
-  
-  </body>
+  </section>
+
+  <footer class="container-fluid bg-light text-center p-3">
+    <p class="small">
+      &copy; Todos los derechos reservados :: Pio's Pizza :: México 2023
+    </p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/5fc6fc59a6.js" crossorigin="anonymous"></script>
+
+  <script src="/JavaScript/ticket.js"></script>
+
+</body>
+
 </html>
