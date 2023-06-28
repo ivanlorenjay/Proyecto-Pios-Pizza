@@ -73,40 +73,28 @@
     <!-- carrito -->
     <div class="container-icon">
         <div class="container-cart-icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="icon-cart"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-            />
-          </svg>
-          <div class="count-products">
-            <span id="contador-productos">0</span>
-          </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="icon-cart">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+            <div class="count-products">
+                <span id="contador-productos">0</span>
+            </div>
         </div>
-          <!-- lista pedido -->
-          <div id="Pedidos">
+        <!-- lista pedido -->
+        <div id="Pedidos">
             <div></div>
             <span data-Price="$0">Total: </span>
         </div>
-      </div>
+    </div>
     </header>
   
-    <div class="container titulo">
-      <h2>Hamburguesas</h2>
-    </div>
 
     <section id="Hamburguesas" class="container-fluid">
         <div class="row justify-content-center">
           <!-- burger 1 -->
-          <div class="Hamburguesa col-12 col-md-4 col-lg-4">
+          <div class="Hamburguesa col-12 col-md-6 col-lg-4">
             <div class="product-container">
               <img src="imagenes/hamburguesa icono.png" alt="Hamburguesa Sencilla">
               <h3>Sencilla</h3>
@@ -117,7 +105,7 @@
             </div>
           </div>
           <!-- burger 2 -->
-          <div class="Hamburguesa col-12 col-md-4 col-lg-4">
+          <div class="Hamburguesa col-12 col-md-6 col-lg-4">
             <div class="product-container">
               <img src="imagenes/image-PhotoRoom.png-PhotoRoom.png" alt="Hamburguesa con Tocino">
               <h3>Con Tocino</h3>
@@ -128,7 +116,7 @@
             </div>
           </div>
           <!-- burger 3 -->
-          <div class="Hamburguesa col-12 col-md-4 col-lg-4">
+          <div class="Hamburguesa col-12 col-md-6 col-lg-4">
             <div class="product-container">
               <img src="imagenes/image-PhotoRoom.png-PhotoRoom (1).png" alt="Hamburguesa Hawallana">
               <h3>Hawallana</h3>
@@ -138,9 +126,6 @@
             <button>Agregar</button>
             </div>
           </div>
-        </div>
-
-        <div class="row ">
           <!-- burger 4 -->
           <div class="Hamburguesa col-12 col-md-4 col-lg-4">
             <div class="product-container">
@@ -173,10 +158,12 @@
             <span data-Price="0">Costo: $</span>
             <button>Agregar</button>
             </div>
-          </div>
         </div>
       </section>
-
+      
+      
+        
+    
     <!-- footer: datos de contacto y locación -->
     <footer class="footer mt-auto py-3 bg-light text-center">
         <div class="container">
@@ -184,6 +171,13 @@
         </div>
     </footer>
 
+<script>
+    let element = document.getElementById("Pr_Sencilla");
+
+    element.addEventListener("click", function() {
+        var inputNombre = document.getElementsById("hd_Sencilla");
+    });
+</script>
     <script src="https://kit.fontawesome.com/5fc6fc59a6.js" crossorigin="anonymous"></script>
     <script src="/JavaScript/ticket.js"></script>
 </body>
