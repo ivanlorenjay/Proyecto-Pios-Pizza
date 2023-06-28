@@ -1,100 +1,269 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bebidas</title>
-    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/stylesbebidas.css" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/imagenes/icono.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/imagenes/icono.jpg" type="image/x-icon" />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Titan+One&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Barra de navegacion -->
     <nav class="navbar navbar-expand-md navbar-light">
-        <div class="container-fluid">
+      <div class="container-fluid">
+        <!-- menu desplegable -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- menu desplegable -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <!-- logo -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="img/logo.jpg"
+              alt="logo-page"
+              width="50"
+              height="50"
+              class="d-inline-block align-text-top rounded-circle"
+            />
+          </a>
 
-            <div class="collapse navbar-collapse" id="navbar-toggler">
-                <!-- logo -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.jpg" alt="logo-page" width="50" height="50" class="d-inline-block align-text-top rounded-circle">
-                </a>
-
-                <!-- paginas -->
-                <ul class="navbar-nav d-flex justify-content-center align-items-center">
-                    <li class="nav-item name">
-                        <a class="nav-link" href="index.html">Pio's Pizza</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                
-            </div>
+          <!-- paginas -->
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item name">
+              <a class="nav-link" href="index.html">Pio's Pizza</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <header class="container-fluid">
-        <div class="flex-row d-flex justify-content-between align-items-center head-items">
-            <div class="menu-item"><a href="hamburguesas.html">Hamburguesas</a></div>
-            <div class="menu-item"><a href="pizzas.html">Pizzas</a></div>
-            <div class="menu-item"><a href="snacks.html">Snacks</a></div>
-            <div class="menu-item"><a href="bebidas.html">Bebidas</a></div>
-        </div>
+    <header>
+      <a href="hamburguesas.html">Hamburguesas</a>
+      <a href="pizzas.html">Pizzas</a>
+      <a href="snacks.html">Snacks</a>
+      <a href="bebidas.html">Bebidas</a>
     </header>
-
-    <section id="Bebidas">
-        <h2>Bebidas</h2>
-        <div class="product">
-            <img src="imagenes/malteada.jpg" alt="Malteadas">
-            <h3>Malteadas</h3>
-            <p>Refrescantes malteadas con sabores variados y toppings deliciosos.</p>
-        </div>
-        <div class="product">
-            <img src="imagenes/frape oreo.jpg" alt="Frapuchinos">
-            <h3>Frapuchinos</h3>
-            <p>Deliciosos frapuchinos de café con leche y diferentes sabores a elección.</p>
-        </div>
-        <div class="product">
-            <img src="imagenes/refrescos.jpg" alt="Refrescos">
-            <h3>Refrescos</h3>
-            <p>Gran variedad de refrescos gasificados y sin gas para acompañar tus comidas.</p>
-        </div>
-        <div class="product">
-            <img src="imagenes/juguito.jpg" alt="Juguito">
-            <h3>Juguito</h3>
-            <p>Jugos naturales de frutas frescas para disfrutar de un sabor auténtico.</p>
-        </div>
-        <div class="product">
-            <img src="imagenes/cafe.jpg" alt="Café">
-            <h3>Café</h3>
-            <p>Selección de cafés aromáticos, desde el clásico americano hasta el intenso espresso.</p>
-        </div>
-        <div class="product">
-            <img src="imagenes/capuchino.jpg" alt="Capuchino">
-            <h3>Capuchino</h3>
-            <p>Delicioso capuchino con una capa de espuma de leche y un toque de cacao en polvo.</p>
-        </div>
-        <div class="product">
-            <img src="imagenes/mokachino.jpg" alt="Mok
+    <main>
+      <div>
+        <article>
+          <div>
+            <div
+              style="--img: url(/imagenes/Bebidas/malteadas1.jpg)"
+              data-name="Malteadas"
+            ></div>
+            <div>
+              <h4>Sabores</h4>
+              <input type="radio" name="Malteadas" id="M1" />
+              <label for="M1">
+                <buttonCustom>Fresa</buttonCustom>
+              </label>
+              <span>30</span>
+              <input type="radio" name="Malteadas" id="M2" />
+              <label for="M2">
+                <buttonCustom>Vainilla</buttonCustom>
+              </label>
+              <span>30</span>
+              <input type="radio" name="Malteadas" id="M3" />
+              <label for="M3">
+                <buttonCustom>Chocolate</buttonCustom>
+              </label>
+              <span>30</span>
+              <input type="radio" name="Malteadas" id="M4" />
+              <label for="M4">
+                <buttonCustom>Rompope</buttonCustom>
+              </label>
+              <span>35</span>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div>
+            <div
+              style="
+                --img: url(/imagenes/Bebidas/frapuchino.jpg);
+                background-size: 125%;
+              "
+              data-name="Frapuchino"
+            ></div>
+            <div>
+              <h4>Sabores</h4>
+              <input type="radio" name="Frapuchino" id="F1" />
+              <label for="F1">
+                <buttonCustom>Moka</buttonCustom>
+              </label>
+              <span>35</span>
+              <input type="radio" name="Frapuchino" id="F2" />
+              <label for="F2">
+                <buttonCustom>Vainilla</buttonCustom>
+              </label>
+              <span>35</span>
+              <input type="radio" name="Frapuchino" id="F3" />
+              <label for="F3">
+                <buttonCustom>Capuchino</buttonCustom>
+              </label>
+              <span>35</span>
+              <input type="radio" name="Frapuchino" id="F4" />
+              <label for="F4">
+                <buttonCustom>Oreo</buttonCustom>
+              </label>
+              <span>40</span>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div>
+            <div
+              style="--img: url(/imagenes/Bebidas/refrescos.jpg)"
+              data-name="Refrescos"
+            ></div>
+            <div>
+              <h4>Sabores</h4>
+              <input type="radio" name="Refrescos" id="R1" />
+              <label for="R1">
+                <buttonCustom>400 ml</buttonCustom>
+              </label>
+              <span>15</span>
+              <input type="radio" name="Refrescos" id="R2" />
+              <label for="R2">
+                <buttonCustom>2 L</buttonCustom>
+              </label>
+              <span>35</span>
+              <input type="radio" name="Refrescos" id="R3" />
+              <label for="R3">
+                <buttonCustom>Juguito</buttonCustom>
+              </label>
+              <span>10</span>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div>
+            <div
+              style="
+                --img: url(/imagenes/Bebidas/cafe.jpg);
+                background-size: 110%;
+              "
+              data-name="Café"
+            ></div>
+            <div>
+              <h4>Sabores</h4>
+              <input type="radio" name="Cafe" id="C1" />
+              <label for="C1">
+                <buttonCustom>Americano</buttonCustom>
+              </label>
+              <span>20</span>
+              <input type="radio" name="Cafe" id="C2" />
+              <label for="C2">
+                <buttonCustom>Capuchino</buttonCustom>
+              </label>
+              <span>30</span>
+              <input type="radio" name="Cafe" id="C3" />
+              <label for="C3">
+                <buttonCustom>Moka</buttonCustom>
+              </label>
+              <span>30</span>
+              <input type="radio" name="Cafe" id="C4" />
+              <label for="C4">
+                <buttonCustom>Latte</buttonCustom>
+              </label>
+              <span>30</span>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div>
+            <div
+              style="
+                --img: url(/imagenes/Bebidas/chocolate.jpg);
+                background-size: 80%;
+              "
+              data-name="Chocolate"
+            ></div>
+            <div>
+              <h4>Sabores</h4>
+              <input type="radio" name="Chocolate" id="CH1" />
+              <label for="CH1">
+                <buttonCustom>Agua</buttonCustom>
+              </label>
+              <span>20</span>
+              <input type="radio" name="Chocolate" id="CH2" />
+              <label for="CH2">
+                <buttonCustom>Leche</buttonCustom>
+              </label>
+              <span>25</span>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div>
+            <div
+              style="
+                --img: url(/imagenes/Bebidas/te.jpg);
+                background-size: 100%;
+              "
+              data-name="Té"
+            ></div>
+            <div>
+              <h4>Sabores</h4>
+              <input type="radio" name="Te" id="T1" />
+              <label for="T1">
+                <buttonCustom>Manzanilla</buttonCustom>
+              </label>
+              <span>15</span>
+              <input type="radio" name="Te" id="T2" />
+              <label for="T2">
+                <buttonCustom>Verde</buttonCustom>
+              </label>
+              <span>15</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <footer>© Todos los derechos reservados :: Pio's Pizza :: México 2023</footer>
+    </main>
+  </body>
+</html>

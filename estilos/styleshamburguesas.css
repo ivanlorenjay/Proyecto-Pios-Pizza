@@ -72,8 +72,8 @@ header .menu-item a::before {
   transform: scaleX(1);
 }
 
-.container h2 {
-  display: grid;
+.container h2{
+  /* display: grid; */
   place-items: center;
   margin-bottom: 2rem;
   font-size: 3.2rem;
@@ -85,51 +85,70 @@ header .menu-item a::before {
   margin-top: auto;
 }
 
-/* Estilos para la sección Snacks */
-#Snacks {
-  background-color: #F3FCF0;
-  padding: 50px 0;
-}
-
-.container {
+/* Estilos para la sección "Hamburguesas" */
+#Hamburguesas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .product {
-  width: 300px;
-  margin: 20px;
+  width: 100%;
+  /* margin: 20px; */
   text-align: center;
+  background-color: #f8f8f8;
+  padding: 1rem auto;
+  margin: auto 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+@media screen and (min-width: 440px){
+  .product {
+    width: 85%;
+  }
+
+  .fix {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+
+  }
+}
+
+.product:hover {
+  transform: translateY(-5px);
 }
 
 .product img {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 10px;
-}
-
-.product h3 {
-  font-size: 1.5rem;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
   margin-bottom: 10px;
 }
 
+.product h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
 .product p {
-  font-size: 1rem;
-  color: #555555;
+  margin-top: 10px;
+  color: #777;
 }
 
-/* Footer */
-
-.footer {
-  background-color: #f8f9fa;
-  color: #6c757d;
+/* Separación entre los productos */
+.product:nth-child(2n) {
+  margin-right: 35%;
+}
+.row {
+  width: 100% !important; 
 }
 
-.footer .container {
-  max-width: 960px;
-}
-
-.footer span {
-  font-size: 14px;
+.product:nth-child(2n+1) {
+  margin-left: 35%;
 }

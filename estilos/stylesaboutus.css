@@ -3,59 +3,111 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  /* background-color: #252525 !important; */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
 }
 
-.nav-item {
-  margin-left: 100px;
+.navbar {
+  padding: 2rem;
+  background-color: #f5f6f7;
+  position: fixed;
+}
+
+.navbar-collapse .nav-bar {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  text-decoration: none;
+  /* margin-left: 130px */
+}
+
+nav .name a {
+  font-family: "Dancing Script", cursive;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 /* Estilos para el menú de navegación */
 header {
-  background-color: #fc9251;
-  color: #fff;
-  padding: 10px 0;
-}
-
-.menu-item {
-  display: inline-block;
-  margin-right: 10px;
+  background-color: #333;
+  padding: 0.5em 1.5em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 .menu-item a {
+  color: white;
   text-decoration: none;
-  color: #fff;
-  padding: 5px;
 }
 
 /* Estilos para la sección "About Us" */
 #about-us {
-  background-color: #f8f8f8;
   padding: 20px 0;
+  padding-bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
 }
 
 .about-content {
-  display: flex;
-  align-items: center;
-}
-
-.about-content img {
-  width: 300px;
-  height: auto;
-  margin-right: 20px;
+  padding: 1em 15vw;
+  text-align: justify;
 }
 
 .description p {
+  font-size: 1em;
   margin-bottom: 10px;
+  font-style: italic;
+  font-weight: 600;
 }
-
+.description div {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+.description img {
+  height: 10em;
+  border: 2px solid rgba(21, 21, 21, 0.5);
+  padding: 1.5em;
+  border-radius: 100%;
+}
 /* Estilos para el pie de página */
 footer {
-  background-color: #f8f8f8;
-  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: min-content;
+  background-color: #151515;
+  color: white;
+  padding: 0.5em;
   text-align: center;
+  border-top: #151515 ridge 0.2em;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1em;
+  letter-spacing: 0.05em;
 }
+footer p {
+  margin: 0;
+}
+.about-content {
+}
+/* https://di-uploads-pod8.dealerinspire.com/rockwallchryslerdodgejeepram/uploads/2018/10/pizza-banner.jpg
+https://image.freepik.com/foto-gratis/pizza-cultivo-negro_23-2147749510.jpg */
+
+/* https://www.wallpaperbetter.com/es/hd-wallpaper-tyjmp */
+
+/*https://i.pinimg.com/originals/b8/5d/7c/b85d7c89847af5ca26a99fe6791a7dd0.jpg
