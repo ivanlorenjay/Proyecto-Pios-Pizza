@@ -37,38 +37,34 @@ header {
   padding: 10px 0;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .menu-item {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-header .menu-item a {
+.menu-item a {
   text-decoration: none;
   color: #ffffff;
-  padding: 10px;
+  padding: 5px;
   transition: color 0.3s ease-in-out;
 }
 
-header .menu-item a::before {
+.menu-item a::before {
   content: "";
+  /* position: absolute; */
   top: 100%;
   width: 100%;
   height: 3px;
+  /* background-color: #ff0000 url("/imagenes/pizza-bg.jpg") no-repeat center center; */
   transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 
-header .menu-item a:hover {
-  color: #FDE74C;
+.menu-item a:hover {
+  border-radius: 25%;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing:+1px;
+  text-shadow: 0 0 5px #181818, 0 0 10px #ffffff, 0 0 15px #fff, 0 0 20px #ffffffee, 0 0 25px #ebe3e3e1;
+  padding: 8px;
 }
 
-header .menu-item a::before {
+.menu-item a::before {
   transform: scaleX(1);
 }
 
