@@ -109,6 +109,10 @@ header .menu-item a::before {
   padding: 40px 40px 80px 40px;
 }
 
+.carousel {
+  margin: 25px;
+}
+
 .testimonios .carousel {
   max-width: 800px;
 }
