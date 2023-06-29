@@ -72,6 +72,7 @@ header .menu-item a::before {
   transform: scaleX(1);
 }
 
+/* ESTE ES EL BLOQUE DE CÓIGO QUE TIENES QUE COPIAR PARA TUS ESTILOS DE TU RESPECTIVA SECCION */
 .container h2 {
   display: flex;
   place-items: center;
@@ -83,6 +84,7 @@ header .menu-item a::before {
   justify-content: center;
   padding-top: 10px;
 }
+/* TERMINA AQUIÍ WEON */
 
 
 #Hamburguesas {
