@@ -84,11 +84,11 @@ header {
 
 
 #Hamburguesas {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  /* background-color: rgb(255, 153, 0); */
+  align-items: center; */
+  background-color: rgb(255, 153, 0);
 }
 
 .product-container {

@@ -100,9 +100,10 @@
     <!-- CODIGO PARA COPIAR TERMINA AQUÍ -->
 
     <section id="Hamburguesas" class="container-fluid">
+
         <div class="row justify-content-center">
             <!-- burger 1 -->
-            <div class="Hamburguesa col-12 col-md-6 col-lg-4">
+            <div class="Hamburguesa col-12 col-md-4">
                 <div class="product-container">
                     <img src="imagenes/hamburguesa icono.png" alt="Hamburguesa Sencilla">
                     <h3>Sencilla</h3>
@@ -112,7 +113,7 @@
                 </div>
             </div>
             <!-- burger 2 -->
-            <div class="Hamburguesa col-12 col-md-6 col-lg-4">
+            <div class="Hamburguesa col-12 col-md-4">
                 <div class="product-container">
                     <img src="imagenes/image-PhotoRoom.png-PhotoRoom.png" alt="Hamburguesa con Tocino">
                     <h3>Con Tocino</h3>
@@ -122,7 +123,7 @@
                 </div>
             </div>
             <!-- burger 3 -->
-            <div class="Hamburguesa col-12 col-md-6 col-lg-4">
+            <div class="Hamburguesa col-12 col-md-4">
                 <div class="product-container">
                     <img src="imagenes/image-PhotoRoom.png-PhotoRoom (1).png" alt="Hamburguesa Hawallana">
                     <h3>Hawallana</h3>
@@ -131,11 +132,15 @@
                     <button id="hawallana">Agregar</button>
                 </div>
             </div>
+        </div>
+        
+        <div class="row justify-content-center">
+
             <!-- burger 4 -->
-            <div class="Hamburguesa col-12 col-md-4 col-lg-4">
+            <div class="Hamburguesa col-12 col-md-4">
                 <div class="product-container">
                     <img src="imagenes/hamburguesa de pollo icono-PhotoRoom.png-PhotoRoom.png"
-                        alt="Hamburguesa de Pollo">
+                    alt="Hamburguesa de Pollo">
                     <h3>Pollo</h3>
                     <p>Hamburguesa de pollo crujiente a la parrilla, lechuga, tomate, cebolla, salsa.</p>
                     <span data-Price="45">Costo: $</span>
@@ -143,10 +148,10 @@
                 </div>
             </div>
             <!-- burger 5 -->
-            <div class="Hamburguesa col-12 col-md-4 col-lg-4">
+            <div class="Hamburguesa col-12 col-md-4">
                 <div class="product-container">
                     <img src="imagenes/combo 1 icono-PhotoRoom.png-PhotoRoom.png"
-                        alt="Hamburguesa de Pollo">
+                    alt="Hamburguesa de Pollo">
                     <h3>Combo 1</h3>
                     <p>Combo de Hamburguesa Sencilla, Papas a la Francesa y Refresco de 400Ml.</p>
                     <span data-Price="70">Costo: $</span>
@@ -154,17 +159,19 @@
                 </div>
             </div>
             <!-- burger 6 -->
-            <div class="Hamburguesa col-12 col-md-4 col-lg-4">
+            <div class="Hamburguesa col-12 col-md-4">
                 <div class="product-container">
                     <img src="imagenes/combo 2 icono-PhotoRoom.png-PhotoRoom.png"
-                        alt="Hamburguesa de Pollo">
+                    alt="Hamburguesa de Pollo">
                     <h3>Combo 2</h3>
                     <p>Combo Hamburguesa de pollo a la parrilla, Papas a la Francesa y Refresco de 400Ml.</p>
                     <span data-Price="80">Costo: $</span>
                     <button id="combo_2">Agregar</button>
                 </div>
             </div>
+
         </div>
+
     </section>
 
     <!-- footer: datos de contacto y locación -->
@@ -174,43 +181,9 @@
         </div>
     </footer>
 
-    <script>
-        const P = document.querySelector("#Pedidos");
-        const Hamburguesas = document.querySelectorAll(".Hamburguesa .product-container");
-        const Carrito = [];
-        
-        Hamburguesas.forEach((Hamburguesa) => {
-          const button = Hamburguesa.querySelector("button");
-          const priceSpan = Hamburguesa.querySelector("span[data-Price]");
-        
-          button.addEventListener("click", () => {
-            const price = parseInt(priceSpan.getAttribute("data-Price"));
-            const name = Hamburguesa.querySelector("h3").innerHTML;
-        
-            const Art = document.createElement("article");
-            Art.innerHTML = `<span>${name}</span><span>${price}</span>`;
-            P.querySelector("div").appendChild(Art);
-        
-            Carrito.push(price);
-        
-            P.querySelector("div + span").setAttribute(
-              "data-price",
-              `$${Carrito.reduce((VP, Total) => VP + Total, 0)}`
-            );
-        
-            if (Carrito.length > 0) {
-              P.classList.add("Fill");
-            } else {
-              P.classList.remove("Fill");
-            }
-        
-            document.querySelector("#contador-productos").innerHTML = Carrito.length;
-          });
-        });
-        
-    </script>
     <script src="https://kit.fontawesome.com/5fc6fc59a6.js" crossorigin="anonymous"></script>
-    <script src="/JavaScript/ticket.js"></script>
+    <!-- <script src="/JavaScript/ticket.js"></script> -->
+    <script src="/JavaScript/burguer.js"></script>
 </body>
 
 </html>
