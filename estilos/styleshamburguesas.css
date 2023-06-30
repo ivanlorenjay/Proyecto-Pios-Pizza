@@ -83,17 +83,24 @@ header {
 /* TERMINA AQUIÍ WEON */
 
 
-#Hamburguesas {
+/* #Hamburguesas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 153, 0);
+} */
+
+#Hamburguesas .row {
+  /* background-color: blue; */
+  margin: 5px;
+  margin-top: 8px;
+  /* border: solid black; */
 }
 
 .product-container {
-  width: 90%;
-  max-width: 300px;
+  /* width: 90%;
+  max-width: 300px; */
   text-align: center;
   background-color: #f8f8f8;
   padding: 1rem;
@@ -103,11 +110,11 @@ header {
   transition: transform 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 440px) {
+/* @media screen and (min-width: 440px) {
   .product-container {
     width: calc(77.9999% - 2rem);
   }
-}
+} */
 
 .product-container:hover {
   transform: translateY(-10px);
