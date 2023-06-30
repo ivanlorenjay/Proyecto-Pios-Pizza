@@ -1,39 +1,33 @@
-const Sizes = [
-  {
-    S: 90,
-    M: 110,
-    L: 150,
-    F: 170,
-  },
-];
+const P = document.querySelector("#Pedidos");
+const Hamburguesas = document.querySelectorAll(".Hamburguesa .product-container");
+const Carrito = [];
 
-const P = document.querySelector("#Pedidos"),
-  Productos = document.querySelectorAll("#Hamburguesas>div>div>div>article"),
-  Carrito = [];
+Hamburguesas.forEach((Hamburguesa) => {
+  const button = Hamburguesa.querySelector("button");
+  const priceSpan = Hamburguesa.querySelector("span[data-Price]");
 
-Productos.forEach((Pro) => {
-  Pro.querySelector("select").addEventListener("change", (e) => {
-    Pro.querySelector("select+span").setAttribute(
-      "data-Price",
-      String(Sizes[Pro.getAttribute("id")][String(e.target.value)])
-    );
-  });
-  Pro.querySelector("button").addEventListener("click", () => {
-    const Value =
-        Sizes[Pro.getAttribute("id")][
-          String(Pro.querySelector("select").value)
-        ],
-      Name = Pro.querySelector(".NamePizza").innerHTML;
+  button.addEventListener("click", () => {
+    const price = parseInt(priceSpan.getAttribute("data-Price"));
+    const name = Hamburguesa.querySelector("h3").innerHTML;
+
     const Art = document.createElement("article");
-    Art.innerHTML = `<span>${Name}</span><span>${Value}</span>`;
+    Art.innerHTML = `<span>${name}</span><span>${price}</span>`;
     P.querySelector("div").appendChild(Art);
-    Carrito.push(Number(Value));
-    P.querySelector("div+span").setAttribute(
+
+    Carrito.push(price);
+
+    P.querySelector("div + span").setAttribute(
       "data-price",
       `$${Carrito.reduce((VP, Total) => VP + Total, 0)}`
     );
-    if (Carrito.length > 0) P.classList.add("Fill");
-    else P.classList.remove("Fill");
+
+    if (Carrito.length > 0) {
+      P.classList.add("Fill");
+    } else {
+      P.classList.remove("Fill");
+    }
+
     document.querySelector("#contador-productos").innerHTML = Carrito.length;
   });
 });
+
