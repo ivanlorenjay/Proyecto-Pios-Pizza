@@ -1,0 +1,48 @@
+/* <!-- CSS --> */
+#cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#cart h2 {
+    margin-top: 0;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cart table th,
+#cart table td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+#cart table th:last-child,
+#cart table td:last-child {
+    text-align: right;
+}
+
+#cart table td:last-child button {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#cart table tfoot td {
+    font-weight: bold;
+}
+
+#cart table tfoot button {
+    float: right;
+}
