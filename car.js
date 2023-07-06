@@ -1,4 +1,5 @@
 /* JavaScript */
+
 const cart = {
     items: [],
     addItem: function(item) {
@@ -57,12 +58,18 @@ const cart = {
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
 addToCartButtons.forEach(button => {
     button.addEventListener('click', event => {
-        const id = button.dataset.id;
-        const name = button.dataset.name;
-        const price = parseFloat(button.dataset.price);
+        const id = button.parentElement.parentElement.dataset.id;
+        const name = button.parentElement.parentElement.dataset.name;
+        const price = parseFloat(button.parentElement.parentElement.dataset.price);
         cart.addItem({id, name, price});
+        updateCartCount();
     });
 });
+
+function updateCartCount() {
+    const cartCount = document.querySelector('#cart-count');
+    cartCount.textContent = cart.items.length;
+}
 
 const clearCartButton = document.querySelector('#clear-cart');
 clearCartButton.addEventListener('click', event => {
