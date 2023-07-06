@@ -1,26 +1,33 @@
-const addButtons = document.querySelectorAll('#Snacks button');
-const cartContainer = document.querySelector('#Pedidos div');
-const totalElement = document.querySelector('[data-price]');
+const P = document.querySelector("#Pedidos");
+const Snacks = document.querySelectorAll("#Snacks .product");
 
-let total = 0;
+const Carrito = [];
 
-function addToCart(name, price) {
+Snacks.forEach((snack) => {
+  const button = snack.querySelector("button");
+  const priceSpan = snack.querySelector("span[data-Price]");
 
-    const productElement = document.createElement('p');
-    productElement.textContent = name + ' - $' + price;
+  button.addEventListener("click", () => {
+    const price = parseInt(priceSpan.dataset.Price);
+    const name = snack.querySelector("h3").textContent;
 
-    cartContainer.appendChild(productElement)
+    const article = document.createElement("article");
+    article.innerHTML = `<span>${name}</span><span>${price}</span>`;
+    P.querySelector("div").appendChild(article);
 
-    total += price;
-    totalElement.dataset.price = '$' + total;
-    totalElement.textContent = 'Total: $' + total;
-}
+    Carrito.push(price);
 
-addButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const productName = button.parentNode.querySelector('h3').textContent;
-        const productPrice = parseFloat(button.parentNode.querySelector('[data-Price]').dataset.price);
+    P.querySelector("span[data-price]").dataset.price = `$${Carrito.reduce(
+      (VP, Total) => VP + Total,
+      0
+    )}`;
 
-        addToCart(productName, productPrice);
-    });
+    if (Carrito.length > 0) {
+      P.classList.add("Fill");
+    } else {
+      P.classList.remove("Fill");
+    }
+
+    document.querySelector("#contador-productos").textContent = Carrito.length;
+  });
 });
